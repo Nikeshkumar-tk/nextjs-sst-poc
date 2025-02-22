@@ -7,8 +7,7 @@ export default $config({
       name: "nextjs-sst-poc",
       removal: input?.stage === "production" ? "retain" : "remove",
       protect: ["production"].includes(input?.stage),
-      home: "aws",
-      providers: { aws: { accessKey: "AKIA5SSFPLXHFKRSH7DR", secretKey: "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" } }
+      home: "aws"
     };
   },
   async run() {
